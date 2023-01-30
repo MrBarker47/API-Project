@@ -1,0 +1,108 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+/* Images */
+img {
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+
+
+.photo2 {
+    width: 70px;
+    height: 70px;
+    padding: 1px;
+}
+
+
+/* Model */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Card */
+.card,
+.card1,
+.card2 {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 40px; 
+    width: 120%;
+    padding-bottom: 30px;
+}
+
+.card:hover,
+.card:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Inside the card */
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+.email, .address {
+    margin: 1px;
+}
+
+
+
+/* Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    margin-left: 160px;
+    column-gap: 100px;
+    
+}
+
+
+/* title */
+.title {
+    padding-left: 60px;
+    font-size: medium;
+}
+
+.newTitle {
+    margin-top: 50px;
+}
