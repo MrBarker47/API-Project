@@ -13,12 +13,6 @@ img {
 }
 
 
-.photo2 {
-    width: 50px;
-    height: 70px;
-    padding: 1px;
-}
-
 
 /* Model */
 .overlay {
@@ -63,7 +57,7 @@ img {
     justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 30px;
-    margin-left: 40px; 
+    /* margin-left: 9px;  */
     width: 120%;
     padding-bottom: 30px;
 }
@@ -79,7 +73,8 @@ img {
     font-size: 20px;
     font-weight: bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 4px;
+    padding-top: 20px;
+    padding-bottom: 4px;
     margin-bottom: 2px;
 }
 
@@ -100,8 +95,19 @@ img {
 
 
 /* title */
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    height:20px;
+    width: 220px;
+    margin-left: 520px;
+    margin-top: 45px;
+}
 .title {
-    padding-left: 60px;
+    padding-left: 152px;
     font-size: medium;
 }
 
