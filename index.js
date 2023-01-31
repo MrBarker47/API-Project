@@ -1,4 +1,3 @@
-
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`
@@ -15,13 +14,11 @@ fetch(urlAPI)
 
 function displayEmployees(employeeData) {
     
-
     employees = employeeData;
-
 
     let employeeHTML = '';
 
-    employees.forEach((employee, index) => {
+  employees.forEach((employee, index) => {
     let name = employee.name;
     let email = employee.email;
     let city = employee.location.city;
@@ -55,7 +52,7 @@ const modalHTML = `
 <p class="address">${city}</p>
 <hr />
 <p>${phone}</p>
-<p class="address">${street}, ${state} ${postcode}</p>
+<p class="address">${street.number} ${street.name}, ${state} ${postcode}</p>
 <p>Birthday</p>
 ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
 </div>
@@ -68,11 +65,12 @@ modalContainer.innerHTML = modalHTML;
 }
 
 gridContainer.addEventListener('click', e => {
-    
+  
     if(e.target !== gridContainer) {
+     
         const card = e.target.closest(".card");
         const index = card.getAttribute('data-index');
-
+     
         displayModal(index);
     }
 });
@@ -81,3 +79,4 @@ gridContainer.addEventListener('click', e => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 });
+
