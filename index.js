@@ -1,3 +1,4 @@
+
 let employees = [];
 const urlAPI = `https://randomuser.me/api/?results=12&inc=name, picture,
 email, location, phone, dob &noinfo &nat=US`
@@ -26,11 +27,8 @@ function displayEmployees(employeeData) {
     let city = employee.location.city;
     let picture = employee.picture;
         
-
-
-
-        employeeHTML += 
-        `<div class="card" data-index="${index}">
+    employeeHTML += 
+      `<div class="card" data-index="${index}">
         <img class="avatar" src="${picture.large}" />
          <div class="text-container">
           <h2 class="name">${name.first} ${name.last}</h2>
@@ -48,7 +46,7 @@ function displayModal(index) {
     let { name, dob, phone, email, location: { city, street, state, postcode
 }, picture } = employees[index];
 
-let data = new Data(dob.data);
+let date = new Date(dob.date);
 
 const modalHTML = `
 <img class="avatar" src="${picture.large}" />
@@ -57,7 +55,7 @@ const modalHTML = `
 <p class="address">${city}</p>
 <hr />
 <p>${phone}</p>
-<p class="address">${streety}, ${state} ${postcode}</p>
+<p class="address">${street}, ${state} ${postcode}</p>
 <p>Birthday</p>
 ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
 </div>
